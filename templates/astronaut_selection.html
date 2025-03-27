@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отбор астронавтов</title>
+    <link rel="stylesheet" href="../static/css/astronaut.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Анкета претендента</h1>
+      <h2>на участие в мисии</h2>
+    </header>
+    <form class="main_form">
+      <div class="sn">
+        <input type="text" placeholder="Введите фамилию" />
+        <input type="text" placeholder="Введите имя" />
+      </div>
+      <input type="text" placeholder="Введите адрес почты" />
+      <div class="education">
+        <p>Какое у вас образование</p>
+        <select>
+          <option value="elementary">Начальное</option>
+          <option value="secondary">Среднее</option>
+          <option value="higher">Высшее</option>
+        </select>
+      </div>
+      <div class="profession">
+        <p>Какие у вас профессии?</p>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Инженер-строитель
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Пилот
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />Метеролог</label
+        >
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Инженер по жизнеобеспечению
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Инженер по радиационной защите
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Врач
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Экзобиолог</label
+        >
+      </div>
+      <div class="genger">
+        <p>Укажите пол</p>
+        <label class="checkbox-label"> <input type="checkbox" />Мужской </label>
+        <label class="checkbox-label"> <input type="checkbox" />Женский </label>
+      </div>
+      <div class="why">
+        <p>Почему Вы хотите принять участие в миссии?</p>
+        <textarea></textarea>
+      </div>
+      <div class="photo">
+        <p>Приложите фотографию</p>
+        <input type="file" />
+      </div>
+      <label class="mars_ready"
+        ><input type="checkbox" />Готовы остаться на Марсе?
+      </label>
+      <button class="send">Отпрвить</button>
+    </form>
+  </body>
+</html>

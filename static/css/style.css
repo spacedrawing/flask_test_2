@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+}
+
+p,
+h3 {
+  padding-top: 10px;
+}
+
+.black {
+  background-color: #d6d8d9;
+}
+
+.yellow {
+  background-color: #fff2ce;
+}
+
+.red {
+  background-color: #f9d6d6;
+}
+
+.green {
+  margin-top: 10px;
+  background-color: #d6f9d6;
+}
