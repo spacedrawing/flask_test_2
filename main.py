@@ -145,6 +145,25 @@ def two_params(username, number):
 def astronaut_selection():
     return render_template("astronaut_selection.html")
 
+@app.route("/results/<nickname>/<int:level>/<float:rating>")
+def results(nickname, level, rating):
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{url_for('static', filename='css/style.css')}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Результат отбора</h1>
+    <h2>Претендента на участие в миссии {nickname}:</h2>
+    <h3 class="green">Поздравляем! Ваш рейтинг после {level} этапа отбора</h3>
+    <h3>состовляет {rating}!</h3>
+    <h3 class="yellow">Желаем удачи!</h3>
+</body>
+</html>"""
+
 
 if __name__ == "__main__":
     app.run(port=8080, host="127.0.0.1")
